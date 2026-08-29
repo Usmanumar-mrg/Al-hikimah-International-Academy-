@@ -1,111 +1,282 @@
+/* ==========================================================================
+   AL-HIKMAH INTERNATIONAL ACADEMY — GLOBAL FOUNDATION
+   Design tokens, typography, base resets, container & button utilities.
+   ========================================================================== */
+
+/* ---------- 1. DESIGN TOKENS ---------- */
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  /* Colors */
+  --color-primary: #0B1F3A;
+  --color-secondary: #087F5B;
+  --color-accent: #D4A72C;
+  --color-background: #F8FAFC;
+  --color-surface: #FFFFFF;
+  --color-text: #172033;
+  --color-text-muted: #64748B;
+  --color-error: #DC2626;
+  --color-success: #16A34A;
+  --color-warning: #D97706;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  /* Typography */
+  --font-heading: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', Arial, sans-serif;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 80px;
+  --space-10: 96px;
+
+  /* Border radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding-desktop: 24px;
+  --container-padding-mobile: 16px;
+}
+
+/* ---------- 2. RESET ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
 
-  @media (max-width: 1024px) {
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+/* ---------- 3. TYPOGRAPHY ---------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+/* Desktop sizes (default / min-width 1024px assumed as base scale) */
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text-hero {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 1.1;
+  color: var(--color-primary);
+}
+
+p {
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.text-body-lg {
+  font-size: 18px;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.text-caption {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+/* Mobile typography overrides (approx. up to 767px) */
+@media (max-width: 767px) {
+  .text-hero {
+    font-size: 38px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  p,
+  .text-body-lg {
     font-size: 16px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+/* ---------- 4. LAYOUT / CONTAINER ---------- */
+.container {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding-desktop);
+  padding-right: var(--container-padding-desktop);
+}
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
+@media (max-width: 767px) {
+  .container {
+    padding-left: var(--container-padding-mobile);
+    padding-right: var(--container-padding-mobile);
   }
 }
 
-body {
-  margin: 0;
+.section {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
 }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
+@media (max-width: 767px) {
+  .section {
+    padding-top: var(--space-7);
+    padding-bottom: var(--space-7);
   }
 }
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
 
-code,
-.counter {
-  font-family: var(--mono);
+/* ---------- 5. BUTTON SYSTEM ---------- */
+.btn {
   display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease, transform 0.15s ease;
 }
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #066a4d;
+}
+
+/* Secondary button */
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: rgba(11, 31, 58, 0.05);
+}
+
+/* Destructive button — use only for delete/reject actions */
+.btn-destructive {
+  background-color: var(--color-error);
+  color: #ffffff;
+}
+
+.btn-destructive:hover:not(:disabled) {
+  background-color: #b91c1c;
+}
+
+/* Loading state (apply alongside .btn-primary/.btn-secondary) */
+.btn-loading {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+/* ---------- 6. BASIC SURFACE/CARD UTILITY (foundation only) ---------- */
+.surface {
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+}
+
+/* ---------- 7. APP ROOT ---------- */
+#root {
+  min-height: 100vh;
+  width: 100%;
 }
