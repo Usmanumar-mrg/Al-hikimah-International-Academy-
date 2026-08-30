@@ -1,18 +1,32 @@
+import { Routes, Route } from 'react-router-dom'
+import PublicLayout from './layouts/PublicLayout.jsx'
+import Home from './pages/Home.jsx'
+import About from './pages/About.jsx'
+import Academics from './pages/Academics.jsx'
+import Admissions from './pages/Admissions.jsx'
+import Contact from './pages/Contact.jsx'
+import News from './pages/News.jsx'
+import Gallery from './pages/Gallery.jsx'
+import Portal from './pages/Portal.jsx'
+import Apply from './pages/Apply.jsx'
+import NotFound from './pages/NotFound.jsx'
+
 function App() {
   return (
-    <main className="container section">
-      <h1>Al-Hikmah International Academy</h1>
-      <p className="text-muted" style={{ marginTop: 'var(--space-2)' }}>
-        Foundation build — design system online. This screen is a temporary
-        check page and will be replaced by the real homepage in the next
-        milestone.
-      </p>
-
-      <div style={{ marginTop: 'var(--space-6)', display: 'flex', gap: 'var(--space-3)' }}>
-        <button className="btn btn-primary">Apply for Admission</button>
-        <button className="btn btn-secondary">Explore Our School</button>
-      </div>
-    </main>
+    <Routes>
+      <Route element={<PublicLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/academics" element={<Academics />} />
+        <Route path="/admissions" element={<Admissions />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/portal" element={<Portal />} />
+        <Route path="/apply" element={<Apply />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   )
 }
 
