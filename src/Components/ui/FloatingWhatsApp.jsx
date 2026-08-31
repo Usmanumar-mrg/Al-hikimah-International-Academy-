@@ -2,7 +2,7 @@ import { CONTACT_LINKS } from '../../config/contact.js'
 
 function FloatingWhatsApp() {
   return (
-    
+   <a 
       href={CONTACT_LINKS.whatsapp}
       target="_blank"
       rel="noopener noreferrer"

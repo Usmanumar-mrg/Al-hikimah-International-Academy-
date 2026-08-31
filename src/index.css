@@ -1166,3 +1166,1391 @@ p {
     align-items: center;
   }
 }
+/* ============================================================
+   PROMPT 05 (v2) — ABOUT + ACADEMICS PAGES
+   ============================================================ */
+
+/* ---------- ABOUT HERO (unchanged from previous version) ---------- */
+
+.about-hero {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-background);
+}
+
+.about-hero__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.about-hero__description {
+  margin-top: var(--space-4);
+  max-width: 520px;
+  color: var(--color-text-muted);
+}
+
+.about-hero__actions {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.about-hero__visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  min-height: 280px;
+}
+
+.about-hero-book {
+  position: relative;
+  width: 220px;
+  height: 160px;
+}
+
+.about-hero-book__page {
+  position: absolute;
+  width: 160px;
+  height: 110px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  box-shadow: 0 12px 30px rgba(11, 31, 58, 0.12);
+}
+
+.about-hero-book__page--1 {
+  top: 30px;
+  left: 10px;
+  background-color: var(--color-primary);
+}
+
+.about-hero-book__page--2 {
+  top: 15px;
+  left: 30px;
+  background-color: var(--color-secondary);
+  opacity: 0.9;
+}
+
+.about-hero-book__page--3 {
+  top: 0;
+  left: 50px;
+  background-color: var(--color-surface);
+}
+
+.about-hero-tag {
+  position: absolute;
+  background-color: var(--color-surface);
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+  box-shadow: 0 8px 20px rgba(11, 31, 58, 0.1);
+}
+
+.about-hero-tag--knowledge {
+  top: 8%;
+  left: 4%;
+}
+
+.about-hero-tag--character {
+  top: 50%;
+  right: 2%;
+}
+
+.about-hero-tag--purpose {
+  bottom: 6%;
+  left: 20%;
+}
+
+/* ---------- SCHOOL INTRODUCTION ---------- */
+
+.school-intro {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.school-intro__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.school-intro__content p {
+  margin-top: var(--space-4);
+}
+
+.school-intro__content h2 {
+  margin-top: var(--space-2);
+}
+
+.school-intro__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.school-intro-panel {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-primary);
+}
+
+/* ---------- MISSION & VISION (unchanged) ---------- */
+
+.mission-vision {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.mission-vision__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.mission-vision__card {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+}
+
+.mission-vision__card h3 {
+  margin-bottom: var(--space-3);
+}
+
+.mission-vision__card--mission {
+  background-color: var(--color-secondary);
+}
+
+.mission-vision__card--mission h3,
+.mission-vision__card--mission p {
+  color: #ffffff;
+}
+
+.mission-vision__card--vision {
+  background-color: var(--color-primary);
+}
+
+.mission-vision__card--vision h3,
+.mission-vision__card--vision p {
+  color: #ffffff;
+}
+
+/* ---------- CORE VALUES (unchanged) ---------- */
+
+.core-values {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.core-values__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.core-value {
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.core-value:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(11, 31, 58, 0.06);
+}
+
+.core-value__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: var(--space-4);
+}
+
+.core-value__title {
+  margin-bottom: var(--space-2);
+}
+
+/* ---------- EDUCATIONAL APPROACH (trimmed — no "development" subsection) ---------- */
+
+.education-approach {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.education-approach__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.education-approach__card {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  background-color: var(--color-surface);
+}
+
+.education-approach__icon {
+  display: block;
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+  margin-bottom: var(--space-4);
+}
+
+.education-approach__card h3 {
+  margin-bottom: var(--space-2);
+}
+
+/* ---------- WHAT MAKES US DIFFERENT (new, standalone) ---------- */
+
+.what-different {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.what-different__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.differentiator {
+  padding: var(--space-5);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+}
+
+.differentiator__marker {
+  display: block;
+  width: 32px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+  margin-bottom: var(--space-4);
+}
+
+.differentiator h3 {
+  margin-bottom: var(--space-2);
+}
+
+/* ---------- ABOUT CTA (unchanged) ---------- */
+
+.about-cta {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-secondary);
+}
+
+.about-cta__inner {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.about-cta__inner h2 {
+  color: #ffffff;
+}
+
+.about-cta__inner p {
+  margin-top: var(--space-4);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+.about-cta__actions {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.about-cta__secondary {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.about-cta__secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- ABOUT RESPONSIVE RULES ---------- */
+
+@media (min-width: 768px) {
+  .mission-vision__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .core-values__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .what-different__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-hero__inner {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .school-intro__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .core-values__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .education-approach__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .what-different__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ============================================================
+   PROMPT 05 — ACADEMICS PAGE
+   ============================================================ */
+
+/* ---------- ACADEMICS HERO ---------- */
+
+.academics-hero {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-background);
+}
+
+.academics-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.academics-hero__desc {
+  margin-top: var(--space-4);
+  max-width: 520px;
+}
+
+.academics-hero__actions {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.academics-hero__visual {
+  display: flex;
+  justify-content: center;
+}
+
+.academics-panel {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.academics-panel__block {
+  position: absolute;
+  border-radius: var(--radius-lg);
+}
+
+.academics-panel__block--gold {
+  width: 45%;
+  height: 40%;
+  background-color: var(--color-accent);
+  top: -8%;
+  right: -8%;
+  opacity: 0.9;
+}
+
+.academics-panel__block--emerald {
+  width: 50%;
+  height: 35%;
+  background-color: var(--color-secondary);
+  bottom: -8%;
+  left: -8%;
+  opacity: 0.85;
+}
+
+.academics-panel__card {
+  position: absolute;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(11, 31, 58, 0.18);
+}
+
+.academics-panel__card--top {
+  top: 14%;
+  left: 8%;
+}
+
+.academics-panel__card--bottom {
+  bottom: 16%;
+  right: 8%;
+}
+
+/* ---------- ACADEMIC PHILOSOPHY ---------- */
+
+.academic-philosophy {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.academic-philosophy__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.philosophy-item__number {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.philosophy-item h3 {
+  margin-bottom: var(--space-2);
+}
+
+/* ---------- SCHOOL LEVELS ---------- */
+
+.school-levels {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.school-levels__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.level-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(11, 31, 58, 0.06);
+  background-color: var(--color-background);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.level-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(11, 31, 58, 0.08);
+  border-color: var(--color-accent);
+}
+
+.level-card__icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-secondary);
+  margin-bottom: var(--space-4);
+}
+
+/* ---------- LEARNING AREAS ---------- */
+
+.learning-areas {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.learning-areas__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.learning-area {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  background-color: var(--color-background);
+}
+
+.learning-area__marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.learning-area__label {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* ---------- BEYOND THE CLASSROOM ---------- */
+
+.beyond-classroom {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.beyond-classroom__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.activity-block {
+  position: relative;
+  padding-left: var(--space-5);
+}
+
+.activity-block__accent {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 4px;
+  height: 28px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+}
+
+.activity-block h3 {
+  margin-bottom: var(--space-2);
+}
+
+/* ---------- STUDENT DEVELOPMENT ---------- */
+
+.student-development {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.student-development__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.skill-pill {
+  padding: 10px 20px;
+  border-radius: 999px;
+  background-color: var(--color-background);
+  border: 1px solid rgba(11, 31, 58, 0.1);
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
+/* ---------- ACADEMICS CTA ---------- */
+
+.academics-cta {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-primary);
+}
+
+.academics-cta__inner {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.academics-cta__inner h2 {
+  color: #ffffff;
+}
+
+.academics-cta__inner p {
+  margin-top: var(--space-4);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+}
+
+.academics-cta__actions {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.academics-cta__secondary {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.academics-cta__secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- ACADEMICS RESPONSIVE RULES ---------- */
+
+@media (min-width: 768px) {
+  .school-levels__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .learning-areas__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .beyond-classroom__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .academics-hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+
+  .academic-philosophy__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .school-levels__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .learning-areas__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .beyond-classroom__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ============================================================
+   PROMPT 06 — ADMISSIONS & APPLICATION EXPERIENCE
+   ============================================================ */
+
+/* ---------- ADMISSIONS INTRO ---------- */
+
+.admissions-intro {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.admissions-intro__inner {
+  max-width: 720px;
+}
+
+.admissions-intro__inner p {
+  margin-top: var(--space-4);
+}
+
+/* ---------- ADMISSION PROCESS ---------- */
+
+.admission-process {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.admission-process__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+.process-step__number {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.process-step h3 {
+  margin-bottom: var(--space-2);
+}
+
+/* ---------- WHO CAN APPLY ---------- */
+
+.who-can-apply {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.who-can-apply__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.who-can-apply__note {
+  margin-top: var(--space-6);
+}
+
+/* ---------- REQUIREMENTS & DOCUMENTS ---------- */
+
+.requirements {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.requirements__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  font-weight: 500;
+  max-width: 560px;
+}
+
+.requirements__list li {
+  display: flex;
+  align-items: center;
+}
+
+/* ---------- APPLICATION FORM ---------- */
+
+.application-form-section {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.application-form-section__inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-primary);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  border: 1px solid rgba(11, 31, 58, 0.15);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  font-size: 16px;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-secondary);
+  box-shadow: 0 0 0 3px rgba(8, 127, 91, 0.15);
+}
+
+.form-input[aria-invalid='true'],
+.form-select[aria-invalid='true'],
+.form-textarea[aria-invalid='true'] {
+  border-color: var(--color-error);
+}
+
+.form-error {
+  font-size: 13px;
+  color: var(--color-error);
+}
+
+.application-form__submit {
+  align-self: flex-start;
+  margin-top: var(--space-2);
+}
+
+.application-form__success {
+  text-align: center;
+  padding: var(--space-7) var(--space-5);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-background);
+}
+
+.application-form__success h3 {
+  color: var(--color-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.application-form__success p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-5);
+}
+
+/* ---------- FAQ ---------- */
+
+.admissions-faq {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.admissions-faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 720px;
+}
+
+.faq-item {
+  border: 1px solid rgba(11, 31, 58, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+}
+
+.faq-item__question {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-primary);
+  list-style: none;
+}
+
+.faq-item__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item__question::after {
+  content: '+';
+  float: right;
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.faq-item[open] .faq-item__question::after {
+  content: '−';
+}
+
+.faq-item__answer {
+  margin-top: var(--space-3);
+}
+
+/* ---------- ADMISSIONS FINAL CTA ---------- */
+
+.admissions-final-cta {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-secondary);
+}
+
+.admissions-final-cta__inner {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.admissions-final-cta__inner h2 {
+  color: #ffffff;
+}
+
+.admissions-final-cta__inner p {
+  margin-top: var(--space-4);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+.admissions-final-cta__actions {
+  margin-top: var(--space-6);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.admissions-final-cta__secondary {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.admissions-final-cta__secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ---------- ADMISSIONS RESPONSIVE RULES ---------- */
+
+@media (min-width: 768px) {
+  .who-can-apply__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .admission-process__grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .who-can-apply__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* ============================================================
+   PROMPT 07 — NEWS + GALLERY CONTENT SYSTEM
+   ============================================================ */
+
+/* ---------- MEDIA PLACEHOLDER (stand-in for real photography) ---------- */
+
+.media-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-align: center;
+}
+
+.media-placeholder__label {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.media-placeholder--primary {
+  background-color: var(--color-primary);
+}
+.media-placeholder--primary .media-placeholder__label {
+  color: var(--color-accent);
+}
+
+.media-placeholder--secondary {
+  background-color: var(--color-secondary);
+}
+.media-placeholder--secondary .media-placeholder__label {
+  color: #ffffff;
+}
+
+.media-placeholder--accent {
+  background-color: var(--color-accent);
+}
+.media-placeholder--accent .media-placeholder__label {
+  color: var(--color-primary);
+}
+
+/* ---------- CATEGORY FILTER (shared by News + Gallery) ---------- */
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-7);
+}
+
+.category-filter__btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(11, 31, 58, 0.15);
+  background-color: transparent;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.category-filter__btn:hover {
+  border-color: var(--color-secondary);
+}
+
+.category-filter__btn--active {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+  color: #ffffff;
+}
+
+/* ---------- FEATURED STORY ---------- */
+
+.featured-story {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.featured-story__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-7);
+  align-items: center;
+}
+
+.featured-story__content p {
+  margin-top: var(--space-4);
+}
+
+.featured-story__date {
+  display: block;
+  margin-top: var(--space-3);
+}
+
+.featured-story__cta {
+  margin-top: var(--space-5);
+}
+
+/* ---------- NEWS LISTING ---------- */
+
+.news-listing {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.news-listing__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.news-listing__empty {
+  padding: var(--space-6) 0;
+}
+
+.news-item-card {
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-surface);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.news-item-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(11, 31, 58, 0.06);
+}
+
+.news-item-card__media {
+  border-radius: 0;
+  aspect-ratio: 16 / 9;
+}
+
+.news-item-card__body {
+  padding: var(--space-5);
+}
+
+.news-item-card__category {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-secondary);
+}
+
+.news-item-card h3 {
+  margin: var(--space-2) 0;
+  font-size: 20px;
+}
+
+.news-item-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: var(--space-4);
+}
+
+.news-item-card__link {
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* ---------- NEWS ARTICLE DETAIL ---------- */
+
+.news-article__header {
+  padding-top: var(--space-9);
+  max-width: 720px;
+}
+
+.news-article__header h1 {
+  margin: var(--space-3) 0;
+}
+
+.news-article__hero {
+  margin-top: var(--space-6);
+}
+
+.news-article__hero-media {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.news-article__body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: var(--space-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.news-article__back {
+  align-self: flex-start;
+  margin-top: var(--space-4);
+}
+
+.news-article__related {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.news-article__related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
+.news-article__related-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.news-article__related-title {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* ---------- GALLERY GRID ---------- */
+
+.gallery-grid-section {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.gallery-grid__empty {
+  padding: var(--space-6) 0;
+}
+
+.gallery-tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.gallery-tile__media {
+  aspect-ratio: 1 / 1;
+  transition: transform 0.25s ease;
+}
+
+.gallery-tile:hover .gallery-tile__media {
+  transform: scale(1.02);
+}
+
+.gallery-tile__title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.gallery-tile:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 3px;
+}
+
+/* ---------- LIGHTBOX ---------- */
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(11, 31, 58, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-5);
+  z-index: 300;
+}
+
+.lightbox-content {
+  position: relative;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  max-width: 480px;
+  width: 100%;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.lightbox-media {
+  aspect-ratio: 4 / 3;
+}
+
+.lightbox-title {
+  margin-top: var(--space-4);
+}
+
+.lightbox-caption {
+  margin-top: var(--space-2);
+}
+
+/* ---------- PROMPT 07 RESPONSIVE RULES ---------- */
+
+@media (min-width: 768px) {
+  .news-listing__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .news-article__related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured-story__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .news-listing__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/* ============================================================
+   PROMPT 08 — CONTACT + LEAD GENERATION SYSTEM
+   ============================================================ */
+
+.contact-methods {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+  background-color: var(--color-surface);
+}
+
+.contact-methods__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.contact-method-card {
+  padding: var(--space-6);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(11, 31, 58, 0.08);
+  background-color: var(--color-background);
+}
+
+.contact-method-card h3 {
+  margin-bottom: var(--space-2);
+}
+
+.contact-method-card p {
+  margin-bottom: var(--space-5);
+}
+
+.contact-methods__note {
+  text-align: center;
+  margin-top: var(--space-7);
+}
+
+.contact-form-section {
+  padding-top: var(--space-9);
+  padding-bottom: var(--space-9);
+}
+
+.contact-form-section__inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contact-methods__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-methods__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

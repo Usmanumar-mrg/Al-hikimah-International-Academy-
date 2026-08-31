@@ -31,11 +31,10 @@ function Footer() {
             <li><NavLink to="/academics">Early Years</NavLink></li>
             <li><NavLink to="/academics">Primary</NavLink></li>
             <li><NavLink to="/academics">Secondary</NavLink></li>
-            <li><NavLink to="/apply">Apply</NavLink></li>
+            <li><NavLink to="/admissions">Apply</NavLink></li>
           </ul>
-        </div>
-
-        <div className="site-footer__col">
+         
+        <div> className="site-footer__col" </div>
           <h4 className="site-footer__heading">Contact</h4>
           <ul className="site-footer__list">
             <li className="text-muted">Address coming soon</li>

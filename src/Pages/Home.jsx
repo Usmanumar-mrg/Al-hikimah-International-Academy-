@@ -1,3 +1,4 @@
+import Seo from '../components/ui/Seo.jsx'
 import Hero from '../components/Home/Hero.jsx'
 import TrustSection from '../components/home/TrustSection.jsx'
 import AboutPreview from '../components/home/AboutPreview.jsx'
@@ -11,6 +12,10 @@ import FinalCTA from '../components/home/FinalCTA.jsx'
 function Home() {
   return (
     <>
+<Seo
+  title="Al-Hikmah International Academy | Excellence in Education & Character"
+  description="A concept school platform for Al-Hikmah International Academy, showcasing modern admissions, academics and school life."
+/>
       <Hero />
       <TrustSection />
       <AboutPreview />

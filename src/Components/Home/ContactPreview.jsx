@@ -21,7 +21,7 @@ function ContactPreview() {
 
         <div className="contact-preview__actions">
           <WhatsAppButton />
-          
+          <a
             href={CONTACT_LINKS.email}
             className="btn btn-secondary"
             aria-label={`Send an email to ${CONTACT_INFO.email}`}

@@ -10,7 +10,7 @@ function FinalCTA() {
           in knowledge, character and confidence.
         </p>
         <div className="final-cta__actions">
-          <NavLink to="/apply" className="btn btn-primary">
+          <NavLink to="/admissions" className="btn btn-primary">
             Apply for Admission
           </NavLink>
           <NavLink to="/contact" className="btn btn-secondary final-cta__secondary">

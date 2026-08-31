@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import PublicLayout from './layouts/PublicLayout.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
@@ -6,9 +6,9 @@ import Academics from './pages/Academics.jsx'
 import Admissions from './pages/Admissions.jsx'
 import Contact from './pages/Contact.jsx'
 import News from './pages/News.jsx'
+import NewsArticle from './pages/NewsArticle.jsx'
 import Gallery from './pages/Gallery.jsx'
 import Portal from './pages/Portal.jsx'
-import Apply from './pages/Apply.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 function App() {
@@ -21,9 +21,10 @@ function App() {
         <Route path="/admissions" element={<Admissions />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/news" element={<News />} />
+        <Route path="/news/:slug" element={<NewsArticle />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/portal" element={<Portal />} />
-        <Route path="/apply" element={<Apply />} />
+        <Route path="/apply" element={<Navigate to="/admissions" replace />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

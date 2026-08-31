@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 import MobileMenu from './MobileMenu.jsx'
 
 const NAV_LINKS = [
@@ -14,8 +14,16 @@ const NAV_LINKS = [
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const location = useLocation()
 
   const closeMenu = () => setIsMenuOpen(false)
+
+  // Close the mobile menu on any route change (link click, browser
+  // back/forward, or programmatic navigation) so it never stays open
+  // after the user has actually left the page it was opened on.
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [location.pathname])
 
   return (
     <header className="site-header">
@@ -25,7 +33,6 @@ function Header() {
           <span className="brand__subtitle">International Academy</span>
         </NavLink>
 
-        {/* Desktop navigation */}
         <nav className="site-nav" aria-label="Main navigation">
           <ul className="site-nav__list">
             {NAV_LINKS.map((link) => (
@@ -43,11 +50,10 @@ function Header() {
           </ul>
         </nav>
 
-        <NavLink to="/apply" className="btn btn-primary site-header__cta">
+        <NavLink to="/admissions" className="btn btn-primary site-header__cta">
           Apply Now
         </NavLink>
 
-        {/* Mobile hamburger button */}
         <button
           type="button"
           className="hamburger-btn"
@@ -62,11 +68,7 @@ function Header() {
         </button>
       </div>
 
-      <MobileMenu
-        isOpen={isMenuOpen}
-        onClose={closeMenu}
-        links={NAV_LINKS}
-      />
+      <MobileMenu isOpen={isMenuOpen} onClose={closeMenu} links={NAV_LINKS} />
     </header>
   )
 }

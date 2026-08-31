@@ -38,7 +38,7 @@ function MobileMenu({ isOpen, onClose, links }) {
         </ul>
       </nav>
 
-      <NavLink to="/apply" className="btn btn-primary mobile-menu__cta" onClick={onClose}>
+      <NavLink to="/admissions" className="btn btn-primary mobile-menu__cta" onClick={onClose}>
         Apply Now
       </NavLink>
     </div>

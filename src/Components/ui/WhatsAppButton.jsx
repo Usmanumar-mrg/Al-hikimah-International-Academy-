@@ -1,9 +1,13 @@
 import { CONTACT_LINKS } from '../../config/contact.js'
 
-function WhatsAppButton({ label = 'Chat on WhatsApp', className = '' }) {
+function WhatsAppButton({ label = 'Chat on WhatsApp', message, className = '' }) {
+  const href = message
+    ? `${CONTACT_LINKS.whatsapp}?text=${encodeURIComponent(message)}`
+    : CONTACT_LINKS.whatsapp
+
   return (
-    
-      href={CONTACT_LINKS.whatsapp}
+   <a 
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       className={`btn btn-primary whatsapp-btn ${className}`.trim()}
