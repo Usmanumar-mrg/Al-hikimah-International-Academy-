@@ -28,19 +28,12 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hero__visual" aria-hidden="true">
-          <div className="hero-panel">
-            <div className="hero-panel__block hero-panel__block--gold" />
-            <div className="hero-panel__block hero-panel__block--emerald" />
-            <span className="hero-panel__monogram">AH</span>
-
-            <div className="hero-panel__card hero-panel__card--top">
-              <span className="hero-panel__card-title">Academic Excellence</span>
-            </div>
-            <div className="hero-panel__card hero-panel__card--bottom">
-              <span className="hero-panel__card-title">Character Formation</span>
-            </div>
-          </div>
+        <div className="hero__visual">
+          <img
+            src="/images/home/hero-campus.webp"
+            alt="Al-Hikmah International Academy campus"
+            className="hero__image"
+          />
         </div>
       </div>
     </section>

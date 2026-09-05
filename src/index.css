@@ -2554,3 +2554,78 @@ p {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+/* ============================================================
+   HOME HERO — REAL IMAGE INTEGRATION
+   ============================================================ */
+
+.hero__image {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 50px rgba(11, 31, 58, 0.2);
+}
+/* ============================================================
+   ABOUT SECTION — REAL IMAGE INTEGRATION (BATCH 1)
+   ============================================================ */
+
+.about-hero__image {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 50px rgba(11, 31, 58, 0.15);
+}
+
+.school-intro__image {
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 12px 30px rgba(11, 31, 58, 0.12);
+}
+/* ============================================================
+   ACADEMICS + ADMISSIONS — REAL IMAGE INTEGRATION (BATCH 2)
+   ============================================================ */
+
+.academics-hero__image {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 20px 50px rgba(11, 31, 58, 0.2);
+}
+/* ============================================================
+   GALLERY — REAL IMAGE INTEGRATION (BATCH 4)
+   ============================================================ */
+
+.gallery-tile__real-image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.lightbox-real-image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+/* ============================================================
+   GALLERY — REAL IMAGE INTEGRATION (BATCH 4)
+   ============================================================ */
+
+.gallery-tile__real-image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.lightbox-real-image {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}

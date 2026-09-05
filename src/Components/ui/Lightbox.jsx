@@ -37,7 +37,15 @@ function Lightbox({ item, onClose }) {
         >
           ✕
         </button>
-        <MediaPlaceholder label={item.category} tone="accent" className="lightbox-media" />
+        {item.image ? (
+          <img
+            src={item.image}
+            alt={item.alt || item.title}
+            className="lightbox-media lightbox-real-image"
+          />
+        ) : (
+          <MediaPlaceholder label={item.category} tone="accent" className="lightbox-media" />
+        )}
         <h3 className="lightbox-title">{item.title}</h3>
         {item.caption && <p className="text-muted lightbox-caption">{item.caption}</p>}
       </div>

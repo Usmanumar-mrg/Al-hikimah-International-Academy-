@@ -22,18 +22,12 @@ function AdmissionsHero() {
           </div>
         </div>
 
-        <div className="hero__visual" aria-hidden="true">
-          <div className="hero-panel">
-            <div className="hero-panel__block hero-panel__block--gold" />
-            <div className="hero-panel__block hero-panel__block--emerald" />
-            <span className="hero-panel__monogram">AH</span>
-            <div className="hero-panel__card hero-panel__card--top">
-              <span className="hero-panel__card-title">Enquire</span>
-            </div>
-            <div className="hero-panel__card hero-panel__card--bottom">
-              <span className="hero-panel__card-title">Enroll</span>
-            </div>
-          </div>
+        <div className="hero__visual">
+          <img
+            src="/images/admissions/admissions.webp"
+            alt="Prospective family engaging with Al-Hikmah International Academy admissions"
+            className="hero__image"
+          />
         </div>
       </div>
     </section>

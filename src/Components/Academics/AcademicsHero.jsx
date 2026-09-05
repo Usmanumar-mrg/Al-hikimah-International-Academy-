@@ -13,7 +13,7 @@ function AcademicsHero() {
             the future.
           </p>
           <div className="academics-hero__actions">
-            <NavLink to="/apply" className="btn btn-primary">
+            <NavLink to="/admissions" className="btn btn-primary">
               Apply for Admission
             </NavLink>
             <NavLink to="/contact" className="btn btn-secondary">
@@ -22,17 +22,12 @@ function AcademicsHero() {
           </div>
         </div>
 
-        <div className="academics-hero__visual" aria-hidden="true">
-          <div className="academics-panel">
-            <div className="academics-panel__block academics-panel__block--gold" />
-            <div className="academics-panel__block academics-panel__block--emerald" />
-            <div className="academics-panel__card academics-panel__card--top">
-              Foundations
-            </div>
-            <div className="academics-panel__card academics-panel__card--bottom">
-              Critical Thinking
-            </div>
-          </div>
+        <div className="academics-hero__visual">
+          <img
+            src="/images/academics/classroom.webp"
+            alt="Students learning in a classroom at Al-Hikmah International Academy"
+            className="academics-hero__image"
+          />
         </div>
       </div>
     </section>

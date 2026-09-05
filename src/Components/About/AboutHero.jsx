@@ -22,15 +22,15 @@ function AboutHero() {
           </div>
         </div>
 
-        <div className="about-hero__visual" aria-hidden="true">
+        <div className="about-hero__visual">
+          <img
+            src="/images/about/character-education.webp"
+           alt="Students engaged in character education at Al-Hikmah International Academy"
+            className="about-hero__image"
+          />
           <span className="about-hero-tag about-hero-tag--knowledge">Knowledge</span>
           <span className="about-hero-tag about-hero-tag--character">Character</span>
           <span className="about-hero-tag about-hero-tag--purpose">Purpose</span>
-          <div className="about-hero-book">
-            <div className="about-hero-book__page about-hero-book__page--1" />
-            <div className="about-hero-book__page about-hero-book__page--2" />
-            <div className="about-hero-book__page about-hero-book__page--3" />
-          </div>
         </div>
       </div>
     </section>

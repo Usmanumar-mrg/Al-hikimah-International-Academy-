@@ -22,8 +22,12 @@ function SchoolIntroduction() {
           </p>
         </div>
 
-        <div className="school-intro__visual" aria-hidden="true">
-          <div className="school-intro-panel" />
+        <div className="school-intro__visual">
+          <img
+            src="/images/about/who-we-are.webp"
+            alt="Students and teachers at Al-Hikmah International Academy"
+            className="school-intro__image"
+          />
         </div>
       </div>
     </section>
