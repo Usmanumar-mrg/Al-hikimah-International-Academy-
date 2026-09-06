@@ -1,5 +1,5 @@
-import GalleryHero from '../components/Gallery/GalleryHero.jsx'
-import GalleryGrid from '../components/Gallery/GalleryGrid.jsx'
+import GalleryHero from '../components/gallery/GalleryHero.jsx'
+import GalleryGrid from '../components/gallery/GalleryGrid.jsx'
 import Seo from '../components/ui/Seo.jsx'
 
 function Gallery() {
