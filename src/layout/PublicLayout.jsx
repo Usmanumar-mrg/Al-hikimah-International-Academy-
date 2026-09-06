@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
-import Header from '../components/layout/Header.jsx'
-import Footer from '../components/layout/Footer.jsx'
+import Header from '../Components/layout/Header.jsx'
+import Footer from '../Components/layout/Footer.jsx'
 import FloatingWhatsApp from '../components/ui/FloatingWhatsApp.jsx'
 
 function PublicLayout() {

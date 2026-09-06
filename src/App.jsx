@@ -1,5 +1,5 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
-import PublicLayout from './layouts/PublicLayout.jsx'
+import PublicLayout from './layout/PublicLayout.jsx'
 import Home from './Pages/Home.jsx'
 import About from './Pages/About.jsx'
 import Academics from './Pages/Academics.jsx'
