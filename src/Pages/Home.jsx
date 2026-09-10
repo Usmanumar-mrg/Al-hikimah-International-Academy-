@@ -1,5 +1,5 @@
 import Seo from  '../components/ui/Seo.jsx'
-import Hero from '../components/Home/Hero.jsx'
+import Hero from '../components/home/Hero.jsx'
 import TrustSection from '../components/home/TrustSection.jsx'
 import AboutPreview from '../components/home/AboutPreview.jsx'
 import AcademicPrograms from '../components/home/AcademicPrograms.jsx'

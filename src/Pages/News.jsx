@@ -1,6 +1,6 @@
-import NewsHero from '../components/News/NewsHero.jsx'
-import FeaturedStory from '../components/News/FeaturedStory.jsx'
-import NewsListing from '../components/News/NewsListing.jsx'
+import NewsHero from '../components/news/NewsHero.jsx'
+import FeaturedStory from '../components/news/FeaturedStory.jsx'
+import NewsListing from '../components/news/NewsListing.jsx'
 import { NEWS_ARTICLES } from '../data/News.js'
 import Seo from '../components/ui/Seo.jsx'
 

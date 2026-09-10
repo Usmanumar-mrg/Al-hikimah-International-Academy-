@@ -1,10 +1,10 @@
-import AcademicsHero from '../components/Academics/AcademicsHero.jsx'
-import AcademicPhilosophy from '../components/Academics/AcademicPhilosophy.jsx'
-import SchoolLevels from '../components/Academics/SchoolLevels.jsx'
-import LearningAreas from '../components/Academics/LearningAreas.jsx'
-import BeyondClassroom from '../components/Academics/BeyondClassroom.jsx'
-import StudentDevelopment from '../components/Academics/StudentDevelopment.jsx'
-import AcademicsCTA from '../components/Academics/AcademicsCTA.jsx'
+import AcademicsHero from '../components/academics/AcademicsHero.jsx'
+import AcademicPhilosophy from '../components/academics/AcademicPhilosophy.jsx'
+import SchoolLevels from '../components/academics/SchoolLevels.jsx'
+import LearningAreas from '../components/academics/LearningAreas.jsx'
+import BeyondClassroom from '../components/academics/BeyondClassroom.jsx'
+import StudentDevelopment from '../components/academics/StudentDevelopment.jsx'
+import AcademicsCTA from '../components/academics/AcademicsCTA.jsx'
 import Seo from '../components/ui/Seo.jsx'
 
 function Academics() {
