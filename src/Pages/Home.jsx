@@ -1,4 +1,4 @@
-import Seo from '../components/ui/Seo.jsx'
+import Seo from  '../components/ui/Seo.jsx'
 import Hero from '../components/Home/Hero.jsx'
 import TrustSection from '../components/home/TrustSection.jsx'
 import AboutPreview from '../components/home/AboutPreview.jsx'
